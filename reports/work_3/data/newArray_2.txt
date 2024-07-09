@@ -1,0 +1,8 @@
+std::vector<int> newVector;
+for (int& num: arr) {
+    if (dividesByAllDigits(num)) {
+        newVector.push_back(num);
+    }
+}
+
+arr = newVector;

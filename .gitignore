@@ -1,0 +1,12 @@
+# игнорирование настроек .vscode
+.vscode
+
+# игнорирование .exe файлов
+*.exe
+
+# игнорирование pdf
+*.pdf
+!reports/docs/work_*.pdf
+
+# ignoring other template
+reports/template.typ

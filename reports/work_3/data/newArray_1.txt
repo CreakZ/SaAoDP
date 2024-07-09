@@ -1,0 +1,12 @@
+int* newArray = nullptr;
+int size{};
+
+for (size_t i{}; i < n; i++) {
+    if (dividesByAllDigits(arr[i])) {
+        newArray = (int*)realloc(newArray, ++size * sizeof(int));
+        newArray[size - 1] = arr[i];
+    }
+}
+n = size;
+
+arr = newArray;

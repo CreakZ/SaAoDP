@@ -1,0 +1,11 @@
+if (!(pos > -1 && pos < this->n)) {
+        std::cout << "Невозможно удалить элемент: неверный индекс!\n";
+        return;
+    }
+
+for (size_t i = pos; i < this->n - 1; i++) {
+    arr[i] = arr[i+1];
+}
+
+arr = (int*)realloc(arr, (n - 1) * sizeof(int));
+n--;

@@ -1,0 +1,6 @@
+if (!(pos > -1 && pos < this->n)) {
+        std::cout << "Невозможно удалить элемент: неверный индекс!\n";
+        return;
+    }
+
+arr.erase(arr.begin() + pos);

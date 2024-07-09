@@ -1,0 +1,6 @@
+if (!(pos > -1 && pos < this->n)) {
+        std::cout << "Невозможно вставить в массив: неверный индекс!\n";
+        return;
+    }
+
+arr.insert(arr.begin() + pos, newElem);
